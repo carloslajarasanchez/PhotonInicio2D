@@ -10,11 +10,11 @@ public class GameManager : MonoBehaviour
     {
         if (PhotonNetwork.IsMasterClient)// si soy el master de la sala
         {
-            PhotonNetwork.Instantiate("PlayerA", new Vector3(), Quaternion.identity);// Instanciamos un jugador master
+            PhotonNetwork.Instantiate("PlayerA", new Vector3(-6, -3, 0), Quaternion.identity);// Instanciamos un jugador master
         }
         else
         {
-            PhotonNetwork.Instantiate("PlayerB", new Vector3(), Quaternion.identity);// Instanciamos el jugador
+            PhotonNetwork.Instantiate("PlayerB", new Vector3(6, 3, 0), Quaternion.identity);// Instanciamos el jugador
         }
     }
 

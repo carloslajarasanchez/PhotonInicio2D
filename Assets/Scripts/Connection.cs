@@ -4,6 +4,7 @@ using UnityEngine;
 //Dependencias
 using Photon.Pun;
 using Photon.Realtime;
+using UnityEngine.SceneManagement;
 
 public class Connection : MonoBehaviourPunCallbacks
 {
